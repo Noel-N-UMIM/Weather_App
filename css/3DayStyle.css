@@ -252,21 +252,21 @@ nav a:hover {
                    text-shadow: #ffee00 1px 1px;
                                     
                     }
-        /*.grid-item-Location {
+        .grid-item-Location {
             grid-area: Location;
             background: rgba(255, 166, 0, 0);
             border: solid white 3px;
             box-shadow: rgba(39, 40, 48, 0.42) 2px 2px;
             font-family: 'Josefin Sans', sans-serif;
-            font-size: 35px;*/
+            font-size: 35px;
         }
-        .grid-item-Location:hover {
+        /*.grid-item-Location:hover {
             grid-area: Location;
             background: rgba(255, 255, 255, 0.315);
             border: solid white 3px;
             box-shadow: rgba(39, 40, 48, 0.42) 3px 3px;
             font-family: 'Josefin Sans', sans-serif;
-            font-size: 35px;
+            font-size: 35px;*/
         }
         
         .grid-item-Date1 {
