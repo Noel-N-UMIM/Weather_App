@@ -129,11 +129,12 @@ nav a:hover {
     box-shadow: rgba(39, 40, 48, 0.42) 2px 2px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 35px;
+
 }
 
 .grid-item-Date {
     grid-area: Date;
-    /*background: rgba(255, 192, 203, 0);*/
+    background: rgba(255, 192, 203, 0);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     margin: 5px;
@@ -141,8 +142,9 @@ nav a:hover {
 
 .grid-item-wind {
     grid-area: wind;
-    background: rgba(255, 192, 203, 0);
     padding: 0px;
+    background: rgba(255, 192, 203, 0);
+    
 }
 
 .grid-item-forecast {
@@ -156,27 +158,22 @@ nav a:hover {
 
 .grid-item-icon_wind {
     grid-area: icon_wind;
-    background: rgba(255, 192, 203, 0);
     position: relative;
-   
-    
-    
+    background: rgba(255, 192, 203, 0);
 }
 
 .grid-item-icon_forecast {
     grid-area: icon_forecast;
-    background: rgba(255, 192, 203, 0);
     position: relative;
-    
+    background: rgba(255, 192, 203, 0);
    
         
 }
     
 .grid-item-icon_waters {
     grid-area: icon_waters;
-    background: rgba(255, 192, 203, 0);
     position: relative;
-    
+    background: rgba(255, 192, 203, 0);
 }
 
 .grid-item-input_a {
@@ -240,6 +237,7 @@ nav a:hover {
             box-shadow: rgba(39, 40, 48, 0.42) 2px 2px;
             font-family: 'Josefin Sans', sans-serif;
             font-size: 35px;
+       
         }
         
         .grid-item-Date {
