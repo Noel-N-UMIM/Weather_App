@@ -1,0 +1,321 @@
+body {
+    
+    background: rgb(103, 176, 224);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    color: rgb(1, 48, 78);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+h2 {
+    color: #000000;
+    font-family: 'Josefin Sans', sans-serif, bold;
+    font-size: 26px;
+}
+h3 {
+    color: #000000;
+    font-family: 'Josefin Sans', sans-serif, bold;
+    font-size: 20px;
+}
+.wrapper {
+    max-width: 1920px;
+    max-height: 1080px;
+    background:rgba(103, 176, 224, 0);
+    margin: auto;
+    padding: 15px;
+
+
+}
+Deg {
+                   font-size: 20px;
+                   font-family: 'Ubuntu', sans-serif;
+                   color:rgb(0, 0, 0);
+                   text-shadow: #ffee00 1px 1px;
+}
+dl {
+    margin: 20px 0 0 0px;
+    padding: 10 px;
+    text-align:center;
+    align-items: center;
+    justify-items: center;
+    } 
+
+a {
+    color: red;
+}
+
+nav {
+    background: rgba(36, 50, 131, 0.63);
+    padding: 10px;
+    margin-left: -15px;
+    margin-top: -15px;
+    margin-right: -15px;
+    overflow: hidden;
+    
+}
+
+nav a {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    text-decoration: none;
+    
+    
+}
+
+nav a:hover {
+    background: rgb(255, 242, 57);
+    color: rgb(0, 37, 107);
+    border-radius: 5px;
+    box-shadow: rgba(109, 109, 109, 0.42) 2px 2px;
+
+}
+
+/* Grid stuff */
+.container {
+    display: grid;
+    
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:auto auto auto auto;
+    grid-template-areas: 
+    ". . Location . ."
+    ". Date1 Date2 Date3 ."
+    ". Temp1 Temp2 Temp3 ."
+    ". Day_1 Day_2 Day_3 .";
+}
+
+.grid-item {
+   padding: 0px;
+   text-align:center;
+   margin: auto;
+
+        
+}
+
+.grid-item-Temp1 {
+    grid-area: Temp1;
+    background: rgba(255, 251, 0, 0);
+    font-size: 75px;
+   font-family: 'Ubuntu', sans-serif;
+   color:rgb(0, 0, 0);
+   text-shadow: #ffee00 1px 1px;
+   margin: 0px;
+   
+    }
+.grid-item-Temp2 {
+        grid-area: Temp2;
+        background: rgba(255, 251, 0, 0);
+        font-size: 75px;
+       font-family: 'Ubuntu', sans-serif;
+       color:rgb(0, 0, 0);
+       text-shadow: #ffee00 1px 1px;
+       margin: 0px;
+       
+        }
+.grid-item-Temp3 {
+            grid-area: Temp3;
+            background: rgba(255, 251, 0, 0);
+            font-size: 75px;
+           font-family: 'Ubuntu', sans-serif;
+           color:rgb(0, 0, 0);
+           text-shadow: #ffee00 1px 1px;
+           margin: 0px;
+           
+            }
+.grid-item-Location {
+    grid-area: Location;
+    background: rgba(255, 166, 0, 0);
+    border: solid white 3px;
+    box-shadow: rgba(39, 40, 48, 0.42) 2px 2px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+    margin: 20px;
+}
+.grid-item-Location:hover {
+    grid-area: Location;
+    background: rgba(255, 255, 255, 0.315);
+    border: solid white 3px;
+    box-shadow: rgba(39, 40, 48, 0.42) 3px 3px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+}
+
+.grid-item-Date1 {
+    grid-area: Date1;
+    background: rgba(255, 192, 203, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    margin: 5px;
+    border-radius: 20px;
+    
+}
+.grid-item-Date2 {
+    grid-area: Date2;
+    background: rgba(255, 192, 203, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    margin: 5px;
+    border-radius: 20px;
+}
+.grid-item-Date3 {
+    grid-area: Date3;
+    background: rgba(255, 192, 203, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    margin: 5px;
+    border-radius: 20px;
+}
+.grid-item-Day_1 {
+    grid-area: Day_1;
+    background: rgba(255, 192, 203, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    margin: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    border: solid white 2px;
+}
+    .grid-item-Day_2 {
+        grid-area: Day_2;
+        background: rgba(255, 192, 203, 0);
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        margin: 5px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        border: solid white 2px;
+    }
+    .grid-item-Day_3 {
+        grid-area: Day_3;
+        background: rgba(255, 192, 203, 0);
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        margin: 5px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        border: solid white 2px;
+    }
+
+@media only screen and (max-width: 600px) {
+    /* your tyles here */
+   body {
+        background-color: lightblue;
+      }
+      .container {
+        display: grid;
+        grid-column-gap: 0px;
+        grid-row-gap: 5px;
+        
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:auto;
+        grid-template-areas: 
+        "Location Location Location"
+        "Date1 Date2 Date3"
+        "Temp1 Temp2 Temp3"
+        "Day_1 Day_2 Day_3";              
+        }
+        .grid-item {
+            padding: 5px;
+            text-align:center;
+            align-items: center;
+            justify-items: center;
+        }
+        .grid-item-Temp1 {
+            grid-area: Temp1;
+            background: rgba(255, 251, 0, 0);
+            font-size: 55px;
+           font-family: 'Ubuntu', sans-serif;
+           color:rgb(0, 0, 0);
+           text-shadow: #ffee00 1px 1px;
+                      
+            }
+        .grid-item-Temp2 {
+                grid-area: Temp2;
+                background: rgba(255, 251, 0, 0);
+                font-size: 55px;
+               font-family: 'Ubuntu', sans-serif;
+               color:rgb(0, 0, 0);
+               text-shadow: #ffee00 1px 1px;
+                            
+                }
+        .grid-item-Temp3 {
+                    grid-area: Temp3;
+                    background: rgba(255, 251, 0, 0);
+                    font-size: 55px;
+                   font-family: 'Ubuntu', sans-serif;
+                   color:rgb(0, 0, 0);
+                   text-shadow: #ffee00 1px 1px;
+                                    
+                    }
+        .grid-item-Location {
+            grid-area: Location;
+            background: rgba(255, 166, 0, 0);
+            border: solid white 3px;
+            box-shadow: rgba(39, 40, 48, 0.42) 2px 2px;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 35px;
+        }
+        .grid-item-Location:hover {
+            grid-area: Location;
+            background: rgba(255, 255, 255, 0.315);
+            border: solid white 3px;
+            box-shadow: rgba(39, 40, 48, 0.42) 3px 3px;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 35px;
+        }
+        
+        .grid-item-Date1 {
+            grid-area: Date1;
+            background: rgba(255, 192, 203, 0);
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 25px;
+            border-radius: 20px;
+            
+        }
+        .grid-item-Date2 {
+            grid-area: Date2;
+            background: rgba(255, 192, 203, 0);
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 25px;
+            border-radius: 20px;
+        }
+        .grid-item-Date3 {
+            grid-area: Date3;
+            background: rgba(255, 192, 203, 0);
+            font-family: 'Josefin Sans', sans-serif;;
+            font-size: 25px;
+            border-radius: 20px;
+        }
+        .grid-item-Day_1 {
+            grid-area: Day_1;
+            background: rgba(255, 192, 203, 0);
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 20px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            border: solid white 2px;
+        }
+            .grid-item-Day_2 {
+                grid-area: Day_2;
+                background: rgba(255, 192, 203, 0);
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 20px;
+                background: rgba(255, 255, 255, 0.5);
+                border-radius: 20px;
+                border: solid white 2px;
+            }
+            .grid-item-Day_3 {
+                grid-area: Day_3;
+                background: rgba(255, 192, 203, 0);
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 20px;
+                background: rgba(255, 255, 255, 0.5);
+                border-radius: 20px;
+                border: solid white 2px;
+            }
+}

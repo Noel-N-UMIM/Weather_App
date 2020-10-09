@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="131.22" height="132.099" viewBox="0 0 131.22 132.099">
+  <defs>
+    <filter id="Rectangle_10" x="0" y="0" width="131.22" height="132.099" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="tideGRP" transform="translate(11.561 9)">
+    <g transform="matrix(1, 0, 0, 1, -11.56, -9)" filter="url(#Rectangle_10)">
+      <g id="Rectangle_10-2" data-name="Rectangle 10" transform="translate(12 9)" fill="#fff" stroke="#00265a" stroke-width="3">
+        <rect width="107.22" height="108.099" stroke="none"/>
+        <rect x="-1.5" y="-1.5" width="110.22" height="111.099" fill="none"/>
+      </g>
+    </g>
+    <path id="Path_9" data-name="Path 9" d="M0,0H107.22V36.912H0Z" transform="translate(0.439 71.187)" fill="#00265a"/>
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="107.22" height="37.791" transform="translate(0.439 35.154)" fill="#00265a"/>
+    <path id="Path_19" data-name="Path 19" d="M0,0H107.22V36.912H0Z" transform="translate(0.439 0)" fill="#00265a"/>
+    <line id="Line_14" data-name="Line 14" x2="108.415" transform="translate(0 36.472)" fill="none" stroke="#f8f8f8" stroke-width="1"/>
+    <path id="Path_10" data-name="Path 10" d="M0,0H108.415" transform="translate(0 72.506)" fill="none" stroke="#fff" stroke-width="1"/>
+  </g>
+</svg>

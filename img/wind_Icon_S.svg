@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="109" viewBox="0 0 108 109">
+  <g id="wind_Icon" transform="translate(107.87 0.241) rotate(90)">
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(-0.241 -0.13)" fill="#fff" stroke="#00265a" stroke-width="7">
+      <ellipse cx="54.5" cy="54" rx="54.5" ry="54" stroke="none"/>
+      <ellipse cx="54.5" cy="54" rx="51" ry="50.5" fill="none"/>
+    </g>
+    <path id="Subtraction_1" data-name="Subtraction 1" d="M0,68.165l0-.005L23.949,0,47.42,66.8A47.4,47.4,0,0,0,24.879,61.29,46.483,46.483,0,0,0,0,68.162Z" transform="translate(17.87 76.73) rotate(-90)" fill="#00265a"/>
+  </g>
+</svg>

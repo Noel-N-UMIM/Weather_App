@@ -1,0 +1,316 @@
+body {
+    
+    background: rgb(103, 176, 224);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    color: rgb(1, 48, 78);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+h2 {
+    color: #000000;
+    font-family: 'Josefin Sans', sans-serif, bold;
+    font-size: 26px;
+}
+h3 {
+    color: #000000;
+    font-family: 'Josefin Sans', sans-serif, bold;
+    font-size: 20px;
+}
+.wrapper {
+    max-width: 1920px;
+    max-height: 1080px;
+    background:rgba(103, 176, 224, 0);
+    margin: auto;
+    padding: 15px;
+}
+    Deg {
+        font-size: 50px;
+        font-family: 'Ubuntu', sans-serif;
+        color:rgb(0, 0, 0);
+        text-shadow: #ffee00 1px 1px;
+
+}
+.Map_Wrapper {
+    max-width: 1920px;
+    max-height: 1080px;
+    background:rgba(103, 176, 224, 0);
+    margin: 0px;
+   
+}
+
+a {
+    color: red;
+}
+
+nav {
+    background: rgba(36, 50, 131, 0.63);
+    padding: 10px;
+    margin-left: -15px;
+    margin-top: -15px;
+    margin-right: -15px;
+    overflow: hidden;
+    
+}
+
+nav a {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    text-decoration: none;
+    
+    
+}
+
+nav a:hover {
+    background: rgb(255, 242, 57);
+    color: rgb(0, 37, 107);
+    border-radius: 5px;
+    box-shadow: rgba(109, 109, 109, 0.42) 2px 2px;
+}
+
+/* Grid stuff */
+.container_3Day  {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:auto auto auto auto;
+    grid-template-areas: 
+    ". Location ."
+    "Date1 Date2 Date3"
+    "Temp Temp2 Temp3"
+    "Day_1 Day_2 Day_3";
+}
+
+.container_Top  {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:auto auto auto auto auto auto;
+    grid-template-areas: 
+    ". . Temp Temp Temp . ."
+    ". . Location Location Location. ."
+    ". . Date Date Date . ."
+    ". . wind forecast waters . ."
+    ". . icon_wind icon_forecast icon_waters . ."
+    ". . input_a input_b input_c . .";
+}
+
+.grid-item {
+    padding: 5px;
+    /*font-size: 22px;*/
+    text-align:center;
+    align-items: center;
+    justify-items: center;
+        
+}
+
+.grid-item-Temp {
+    grid-area: Temp;
+    background: rgba(255, 251, 0, 0);
+    font-size: 100px;
+   font-family:'Ubuntu', sans-serif;
+   color:rgb(0, 0, 0);
+   text-shadow: #ffee00 1px 1px;
+   margin: 25px;
+    }
+
+.grid-item-Location {
+    grid-area: Location;
+    background: rgba(255, 166, 0, 0);
+    border: solid white 3px;
+    box-shadow: rgba(39, 40, 48, 0.42) 2px 2px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+}
+.grid-item-Location:hover {
+    grid-area: Location;
+    background: rgba(255, 255, 255, 0.315);
+    border: solid white 3px;
+    box-shadow: rgba(39, 40, 48, 0.42) 3px 3px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+}
+
+.grid-item-Date {
+    grid-area: Date;
+    background: rgba(255, 192, 203, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.grid-item-wind {
+    grid-area: wind;
+    background: rgba(0, 116, 0, 0);
+    padding: 0px;
+}
+
+.grid-item-forecast {
+    grid-area: forecast;
+    background: rgba(255, 166, 0, 0);
+}
+.grid-item-waters {
+    grid-area: waters;
+    background: rgba(255, 166, 0, 0);
+}
+
+.grid-item-icon_wind {
+    grid-area: icon_wind;
+    background: rgba(255, 192, 203, 0);
+    position: relative;
+   
+    
+    
+}
+
+.grid-item-icon_forecast {
+    grid-area: icon_forecast;
+    background: rgba(255, 255, 0, 0);
+    position: relative;
+    
+   
+        
+}
+    
+.grid-item-icon_waters {
+    grid-area: icon_waters;
+    background: rgba(0, 128, 0, 0);
+    position: relative;
+    
+}
+
+.grid-item-input_a {
+    grid-area: input_a;
+    background: rgba(255, 166, 0, 0);
+}
+
+.grid-item-input_b {
+    grid-area: input_b;
+    background: rgba(255, 192, 203, 0);
+}
+
+.grid-item-input_c {
+    grid-area: input_c;
+    background: rgba(255, 255, 0, 0);
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* your tyles here */
+   body {
+        background-color: lightblue;
+      }
+      
+
+      .container_Top  {
+        display: grid;
+        grid-column-gap: 0px;
+        grid-row-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto; 
+        grid-template-areas: 
+        "Date Date Date"
+        "Location Location Location"
+        "Temp Temp Temp"
+        "icon_wind input_a wind"
+        "icon_forecast input_b forecast"
+        "icon_waters input_c waters";
+        }
+        .grid-item {
+            padding: 5px;
+            text-align:center;
+            align-items: center;
+            justify-items: center;
+          
+        }
+        
+        .grid-item-Temp {
+            grid-area: Temp;
+            background: rgba(255, 251, 0, 0);
+            font-size: 100px;
+           font-family: 'Ubuntu', sans-serif;
+           color:rgb(0, 0, 0);
+           text-shadow: #ffee00 1px 1px;
+            }
+        
+        .grid-item-Location {
+            grid-area: Location;
+            background: rgba(255, 166, 0, 0);
+            border: solid white 3px;
+            box-shadow: rgba(39, 40, 48, 0.42) 2px 2px;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 35px;
+        }
+        .grid-item-Location:hover {
+            grid-area: Location;
+            background: rgba(255, 255, 255, 0.315);
+            border: solid white 3px;
+            box-shadow: rgba(39, 40, 48, 0.42) 3px 3px;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 35px;
+        }
+        
+        .grid-item-Date {
+            grid-area: Date;
+            background: rgba(255, 192, 203, 0);
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 20px;
+        }
+        
+        .grid-item-wind {
+            grid-area: wind;
+            background: rgba(255, 255, 255, 0.616);
+               
+        }
+        
+        .grid-item-forecast {
+            grid-area: forecast;
+            background: rgba(255, 255, 255, 0.616);
+        }
+        .grid-item-waters {
+            grid-area: waters;
+            background: rgba(255, 255, 255, 0.616);
+        }
+        
+        .grid-item-icon_wind {
+            grid-area: icon_wind;
+            background: rgba(255, 255, 255, 0.616);
+            
+            
+        }
+        
+        .grid-item-icon_forecast {
+            grid-area: icon_forecast;
+            background: rgba(255, 255, 255, 0.616);
+                
+        }
+            
+        .grid-item-icon_waters {
+            grid-area: icon_waters;
+            background: rgba(255, 255, 255, 0.616);
+            
+        }
+        
+        .grid-item-input_a {
+            grid-area: input_a;
+            background: rgba(255, 255, 255, 0.616);
+                    }
+        .grid-item-input_b {
+            grid-area: input_b;
+            background: rgba(255, 255, 255, 0.616);
+        }
+        
+        .grid-item-input_c {
+            grid-area: input_c;
+            background: rgba(255, 255, 255, 0.616);
+        }
+    }
+   
